@@ -9,6 +9,7 @@ import (
 	"net/http"
 )
 
+// Utility struct used to unmarshall json api response
 type apiResponse struct {
 	Routes []map[string]interface{} `json:"routes"`
 	Code   string                   `json:"code"`

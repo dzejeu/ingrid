@@ -7,6 +7,6 @@ import (
 
 
 func main() {
-	http.HandleFunc("/", webapp.HandleRequest)
+	http.HandleFunc("/routes", webapp.HandleRequest)
 	http.ListenAndServe(":8080", nil)
 }
